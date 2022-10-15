@@ -124,4 +124,3 @@ class rectangulo:
     def area(self):
         self.area = self.base * self.altura
         print("{} es el área del rectángulo".format(self.area))
- 
