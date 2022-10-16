@@ -15,16 +15,19 @@ Un día que el viento soplaba con fuerza...
 
 texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella banderola -dijo un monje#lo que se mueve es el viento -respondió otro monje#ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
 
-def separar(frase):
-    nuevo_texto=texto.split("#")
-    return nuevo_texto
-
-def mayusculas(frase):
-    resultado =''
-    for i in frase:
-        resultado += i[0].upper()
-    return resultado
-
-texto = "un día que el viento soplaba con fuerza#mira como se mueve aquella banderola -dijo un monje#lo que se mueve es el viento -respondió otro monje#ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
-print(texto)
-print(mayusculas)
+def separar(frases):
+    texto_nuevo = texto.split("#")
+    i = 0
+    for frases in texto_nuevo:
+        texto_nuevo[i] = frases.capitalize()
+        if i == 0:
+            texto_nuevo[i] = texto_nuevo[i] + "..."
+            print(frases[i])
+            i += 1
+        else:
+            texto_nuevo[i] = "-" + texto_nuevo[i] + "."
+            print(frases[i])
+            i +=1
+            for frases in texto_nuevo:
+                print(texto_nuevo)
+separar(texto)
