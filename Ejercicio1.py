@@ -82,6 +82,7 @@ Consulta los vectores AB y BA.
 (Optativo) Determina cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0).
 Crea un rectángulo utilizando los puntos A y B.
 Consulta la base, altura y área del rectángulo.'''
+from curses.textpad import rectangle
 import math
 class punto:
     def __init__(self, x, y):
@@ -134,3 +135,6 @@ C= punto(-3, -1)
 D= punto(0,0)
 
 A.cuadrante()
+B.cuadrante()
+C.cuadrante()
+D.cuadrante()
