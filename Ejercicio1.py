@@ -82,7 +82,7 @@ Consulta los vectores AB y BA.
 (Optativo) Determina cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0).
 Crea un rectángulo utilizando los puntos A y B.
 Consulta la base, altura y área del rectángulo.'''
-
+import math
 class punto:
     def __init__(self, x, y):
         self.x = x
@@ -103,24 +103,34 @@ class punto:
             print("{} está en el origen".format(self)) 
 punto.cuadrante()
 
-#Hacer lo de los vectores
-#def vector(a, b):
+
+def vector(self, n):
+
+
+def distancia(self, n):
 
 
 #Rectángulo
-class rectangulo:
-    def __init__(self, inicial=punto(), final=punto()):
-        self.inicial = inicial
-        self.final = final
+    class rectangulo:
+        def __init__(self, inicial=punto(), final=punto()):
+            self.inicial = inicial
+            self.final = final
 
-    def base(self):
-        self.base = self.final-self.inicial
-        print("{} es la base del rectángulo".format(self.base)) 
+        def base(self):
+            self.base = self.final-self.inicial
+            print("{} es la base del rectángulo".format(self.base)) 
     
-    def altura(self):
-        self.altura = self.final-self.inicial
-        print("{} es la altura del rectángulo".format(self.altura))
+        def altura(self):
+            self.altura = self.final-self.inicial
+            print("{} es la altura del rectángulo".format(self.altura))
 
-    def area(self):
-        self.area = self.base * self.altura
-        print("{} es el área del rectángulo".format(self.area))
+        def area(self):
+            self.area = self.base * self.altura
+            print("{} es el área del rectángulo".format(self.area))
+
+A= punto(2,3)
+B= punto(5,5)
+C= punto(-3, -1)
+D= punto(0,0)
+
+A.cuadrante()
